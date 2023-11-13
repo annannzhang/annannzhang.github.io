@@ -22,8 +22,10 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: Quicksand;
 	vertical-align: baseline;}
+
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -151,7 +153,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #F37021!important;
 		}
 
 	strong, b {
@@ -167,15 +169,19 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.75em;
-		font-weight: 700;
+		font-size: 3em;
+		font-weight: 300;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
+		color:	#F37021;
 	}
 
-		h1 a {
-			color: inherit;
+
+
+		h1.right{
+			font-size:2em;
+			color:black;
+			position:absolute;
+			
 		}
 
 		@media screen and (max-width: 736px) {
@@ -208,11 +214,12 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 1.5em;
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.2em;
+		margin-top: 1em;
 	}
 
 	h4 {
@@ -1788,6 +1795,7 @@ input, select, textarea {
 
 	header p {
 		margin-top: -1em;
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1878,8 +1886,8 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		margin: 0 0 0em 0;
+
 	}
 
 		ul li {
@@ -2572,7 +2580,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2582,7 +2590,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
+			width: calc(20% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2706,27 +2714,27 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #000000;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #000000;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #F37021;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #000000;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #000000;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #000000;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2829,42 +2837,18 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 5em 2em 5em 2em ;
 	}
 
-		#header .logo {
-			display: block;
-			border-bottom: 0;
-			color: inherit;
-			font-weight: 900;
-			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: inline-block;
-		}
-
-			#header .logo > * {
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-			#header .logo .symbol {
-				margin-right: 0.65em;
-			}
-
-				#header .logo .symbol img {
-					display: block;
-					width: 2em;
-					height: 2em;
-				}
-
 		#header nav {
-			position: fixed;
+			font-size: 3em;
+			font-family: Quicksand;
+			position: absolute;
 			right: 2em;
-			top: 2em;
 			z-index: 10000;
 		}
+
+
 
 			#header nav ul {
 				display: -moz-flex;
@@ -2874,76 +2858,26 @@ input, select, textarea {
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
-				align-items: center;
+				align-items: right;
 				list-style: none;
 				margin: 0;
 				padding: 0;
 			}
 
-				#header nav ul li {
-					display: block;
-					padding: 0;
-				}
 
 					#header nav ul li a {
 						display: block;
 						position: relative;
-						height: 3em;
-						line-height: 3em;
-						padding: 0 1.5em;
 						background-color: rgba(255, 255, 255, 0.5);
-						border-radius: 4px;
+						margin-right: 0.5em;
+						border-radius: 2px;
 						border: 0;
 						font-size: 0.8em;
-						font-weight: 900;
-						letter-spacing: 0.35em;
+						font-weight: 300;
 						text-transform: uppercase;
 					}
 
-					#header nav ul li a[href="#menu"] {
-						-webkit-tap-highlight-color: transparent;
-						width: 4em;
-						text-indent: 4em;
-						font-size: 1em;
-						overflow: hidden;
-						padding: 0;
-						white-space: nowrap;
-					}
 
-						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-							-moz-transition: opacity 0.2s ease;
-							-webkit-transition: opacity 0.2s ease;
-							-ms-transition: opacity 0.2s ease;
-							transition: opacity 0.2s ease;
-							content: '';
-							display: block;
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 100%;
-							height: 100%;
-							background-position: center;
-							background-repeat: no-repeat;
-							background-size: 2em 2em;
-						}
-
-						#header nav ul li a[href="#menu"]:before {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-							opacity: 0;
-						}
-
-						#header nav ul li a[href="#menu"]:after {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-							opacity: 1;
-						}
-
-						#header nav ul li a[href="#menu"]:hover:before {
-							opacity: 1;
-						}
-
-						#header nav ul li a[href="#menu"]:hover:after {
-							opacity: 0;
-						}
 
 		@media screen and (max-width: 736px) {
 
@@ -3315,7 +3249,7 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 68em;
+
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}

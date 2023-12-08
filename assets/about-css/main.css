@@ -3690,3 +3690,11 @@ input, select, textarea {
 			}
 
 	}
+
+	.data {
+		position:absolute;
+		align-items:left;
+		top: 20%;
+		background-color: #ffe9ec70;
+		width:500px;
+	  }

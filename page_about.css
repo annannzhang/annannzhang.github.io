@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Gugi&display=swap');
+
+html{
+    font-family: "Gugi", san-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.frame{
+    background-color: #ffffff;
+    height:10vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    display:flex;
+    z-index: 1000;
+}
+
+.body_content{
+    height:78vh;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow-y: auto;
+}
+
+.body_container{
+
+    align-items: center;
+    display:flex;
+}
+
+.body_container#left_box{
+    padding-left: 10vh;
+    padding-right: 10vh;
+    align-items: center;
+    display:flex;
+
+}
+
+.body_container#right_box{
+    display: flex;
+    align-items: flex-start;
+    position:relative;
+    flex-direction:column;
+    margin-left: 0;
+
+}
+
+#right_box{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 10vh;
+    position:relative;
+    width:auto;
+}
+
+#right_box a{
+    font-size: 4vh;
+    color: #D7C7AD;
+    text-decoration: none;
+    margin-left: 3vh;
+
+}
+
+#right_box a:hover{
+    background-color:#F0B23E;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+.nav{
+    width: 100%
+}
+
+.name-container{
+    display:flex;
+    align-items:baseline;
+    flex-direction: row;
+}
+
+
+.ann{
+    color: #896A4E ;
+    font-size: 8vh;
+    margin-right:1vh;
+    margin-left:5vh;
+    width:30%;
+    text-decoration: none;
+}
+
+.zhang{
+    font-family: "Geo", san-serif;
+    font-weight:400;
+    font-style: normal;
+    color: #D7C7AD;
+    font-size: 8vh;
+    margin-left:3vh;
+    width: 40%;
+    text-decoration: none;
+}
+
+.bottom_frame{
+    height:10vh;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.bottom_container a{
+    color:#D7C7AD;
+    font-size:3vh;
+    text-decoration: none;
+}
+
+.bottom_container a[href]:hover{
+    background-color:#F0B23E;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+#right_box a.selected {
+    color:#ffffff;
+    background-color:#F0B23E;
+}
+
+.img{
+    display:flex;
+    position: relative;
+    display: flex;
+}
+
+.rounded-image{
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    width: 35vh;
+}
+
+
+#right_box .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+#right_box .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+/* Change color of dropdown links on hover */
+#right_box .dropdown-content a:hover {background-color: #D5B0AC}
+
+/* Show the dropdown menu on hover */
+#right_box .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1001;
+}
+
+#right_box .dropdown .dropdown-content a {
+    font-size: 2.5vh;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    display: block;
+    white-space: normal;
+}
+

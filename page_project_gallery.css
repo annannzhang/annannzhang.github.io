@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+
+
+html{
+    font-family: "Gugi", san-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y:auto;
+    scrollbar-width:thin;
+}
+
+.frame{
+    background-color: #ffffff;
+    height:10vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    display:flex;
+    z-index: 10;
+}
+
+#right_box{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 10vh;
+    position:relative;
+    width:auto;
+}
+
+#right_box a{
+    font-size: 4vh;
+    color: #2B4570;
+    text-decoration: none;
+    margin-left: 3vh;
+
+}
+
+#right_box a:hover{
+    background-color:#D5B0AC;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+.nav{
+    width: 100%
+}
+
+.name-container{
+    display:flex;
+    align-items:baseline;
+    flex-direction: row;
+}
+
+
+.ann{
+    color: #2B4570;
+    font-size: 8vh;
+    margin-right:1vh;
+    margin-left:5vh;
+    width:30%;
+    text-decoration: none;
+}
+
+.zhang{
+    font-family: "Geo", san-serif;
+    font-weight:400;
+    font-style: normal;
+    color: #A8D0DB;
+    font-size: 8vh;
+    margin-left:3vh;
+    width: 40%;
+    text-decoration: none;
+}
+
+.bottom_frame{
+    height:5vh;
+    width: 100%;
+    bottom: 1vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.bottom_container a{
+    color:#2B4570;
+    font-size:3vh;
+    text-decoration: none;
+}
+
+.bottom_container a[href]:hover{
+    background-color:#D5B0AC;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+#right_box a.selected {
+    color:#ffffff;
+    background-color:#2B4570;
+}
+
+.gallery_frame{
+    height:80vh;
+    width: 100%;
+    top:0vh;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow-y: auto;
+    
+
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.gallery_frame::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery_frame article{
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: 50vh;
+    margin: 2vh 2vh 0vh 3vh;
+}
+
+
+
+.gallery_frame article > .image img{
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+   filter: grayscale(100%); 
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.gallery_frame article > .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vh;
+    height: 27.7vh;
+    background-color: rgba(168, 208, 219, 0.2); 
+    transition: background-color 0.4s ease;
+    z-index: 2; 
+    pointer-events: none; 
+}
+
+
+.gallery_frame article > .image:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.gallery_frame article > .image:hover::before {
+    background-color: rgba(0, 0, 255, 0); /* Remove the blue layer */
+}
+
+
+
+h2{ 
+    font-size: 3vh;
+}
+
+
+.first-half {
+    color: #2B4570;
+}
+
+.second-half {
+    color: #D5B0AC;
+}
+
+.gallery_frame article a {
+    text-decoration: none;
+}
+
+.gallery_frame article:hover h2 {
+    text-decoration: underline;
+    color: white !important; 
+    background-color: #2B4570;
+}
+
+.gallery_frame article:hover h2 .first-half,
+.gallery_frame article:hover h2 .second-half {
+    color: white !important; 
+}
+
+
+
+.project {
+    height:12px;
+    width:100%;
+    justify-content: space-between;
+    top: 0;
+    display:flex;
+    z-index: 0;
+    padding-bottom:10vh;
+    position:relative;
+    height:80vh;
+}
+
+.project-left {
+    margin-left: 10vh;
+    margin-top: 3vh;
+    width: 80%;
+    display:block;
+    margin-right: 10vh;
+    color:#2B4570;
+    flex-wrap:wrap;
+    overflow:scroll;
+    scrollbar-width:none;
+}
+
+.project-left h1 {
+    font-size: 5vh;
+    color:#2B4570;
+}
+.project-left h2 {
+    font-size: 3vh;
+    color:#A8D0DB;
+}
+
+.project-left p{
+    font-size: 2.5vh;
+    font-family: "Hahmlet", sans-serif;
+    margin-bottom:2vh;
+    height:1vh;
+    width:90%;
+}
+
+.project-right {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5vh;
+    position:relative;
+    width: 20%;
+    margin-top: 10vh;
+}
+
+.project-right a{
+    font-size: 3vh;
+    color:#D5B0AC;
+}
+
+.bottom_frame{
+    height:10vh;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index:500;
+}
+
+.bottom_container a{
+    color:#A8D0DB;
+    font-size:3vh;
+    text-decoration: none;
+}
+
+.bottom_container a[href]:hover{
+    background-color:#F0B23E;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+#right_box .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+#right_box .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+/* Change color of dropdown links on hover */
+#right_box .dropdown-content a:hover {background-color: #D5B0AC}
+
+/* Show the dropdown menu on hover */
+#right_box .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1001;
+}
+
+#right_box .dropdown .dropdown-content a {
+    font-size: 2.5vh;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    display: block;
+    white-space: normal;
+}
+

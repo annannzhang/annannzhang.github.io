@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Gugi&display=swap');
+
+html{
+    font-family: "Gugi", san-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frame{
+   
+    background-color:#efebe7;
+    height:85vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+
+.container{
+    width: 48%;
+    padding: 10px;
+    align-items: center;
+    display:flex;
+}
+
+#right_box a{
+    font-size: 5vh;
+    color: #896a4e;
+    text-decoration: none;
+    margin-left: 3vh;
+
+}
+
+#right_box a:hover{
+    background-color:#F0B23E;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+.name-container{
+    display:flexbox;
+    align-items:baseline;
+    flex-direction: row;
+    padding-left:40px;
+}
+
+
+.ann{
+    color: #D7C7AD;
+    font-size: 15vh;
+    margin-right:0;
+    margin-left:2vh;
+    width:30%;
+    text-decoration: none;
+}
+
+.zhang{
+    font-family: "Geo", san-serif;
+    font-weight:400;
+    font-style: normal;
+    color: #896A4E;
+    margin-left:2vh;
+    font-size: 10vh;
+    width: 40%;
+    text-decoration: none;
+}
+
+.bottom_frame{
+    height:15vh;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.bottom_container a{
+    color:#D7C7AD;
+    font-size:5vh;
+    text-decoration: none;
+}
+
+.bottom_container a[href]:hover{
+    background-color:#6C715E;
+    color: #ffffff;
+    text-decoration:underline;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>CITY OF LOS ANGELES
+            RECENT DEVELOPMENT OUTLOOK</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <link rel="stylesheet" href="css/universal_style.css">
+    </head>
+
+    <body>
+        <!--navigation bar-->    
+        <div class="topnav">
+            <hx>CITY OF LOS ANGELES<br>
+                    Development Outlook
+            </hx>
+            <nav>
+                    <a href="0_Overview.html">Overview</a>
+                    <a href="1_Scope_Data.html">Scope & Data</a>
+                    <a href="2_Data_Glance.html">Data at a Glance</a>
+                    <a href="3_Dev_Map.html">Development Map</a>
+            </nav>
+        </div>
+
+        <div class="Big-Container">
+            <div class="container">
+                <h2 style="color:#70cfcb">
+                    Background & Methodology
+                </h2>
+                <div class="img-container">
+                    <img src="sources/DIAGRAM_1.png" alt="method chart" id="fullscreen-img"  class="zoom-img">
+                    <img src="sources/DIAGRAM_2.png" alt="index chart" id="fullscreen-img" class="zoom-img">
+                </div>
+
+                <p>
+                    
+                    <B>Where has development been happening in the City of Los Angeles in the past decade? </B>
+                    This project aims to explore this question through looking at a series of indicators that may 
+                    help us grasp a better idea of this question. 
+                    The indicators are grouped and examined by tier 1, 1.5, 2, and 3 – higher tier means more direct 
+                    relevance to development activities. Please refer to <b><i>Diagram on the left</i></b>.
+                    <br>
+                    <br>
+                    <b>Tier 1</b> consists of number of finaled permits and Certificate of Occupancy, 
+                    which directly represents completed projects in the city. <br>
+                    <b> Tier 1.5</b> looks at number of total permits submitted and issued permits, which suggest an overall development interest and hence potential. <br>
+                    <b> Tier 2 </b> contains valuation and area value suggested in building permits dataset. It is placed towards the bottom because of potential missing or outdated data for certain projects, hence, not completely reliable. <br>
+                    <b> Tier 3 </b> is drawn from Census (ACS 5 year estimates) and Census on the Map on population and job growth over the periods of study. This is a relatively indirect indicator of where development or growth has been happening. 
+                    <br>
+                    <br>
+                    
+                    In addition, Zillow Housing Value Index is referenced but not included in the modeling process, primarily due to absence of a reliable geographic reference of neighborhoods listed on Zillow using Community Planning Area (CPA) or Neighborhoods, both of which are officially established by the City of Los Angeles. 
+                    <br>
+                    <br>
+                    <b> How should we characterize growth and stagnation of development in Los Angeles? </b> In this project, development from 2010 to 2022 is examined at a neighborhood scale and categorized into 4 groups listed below:
+                    
+                    <ol>
+                        <li><b>Neighborhoods with <u>constant development</u> through out (2010 - 2022) </b></li>
+                        <li><b>Neighborhoods underwent development in <u>recent years</u> (2016 - 2022)</b></li> 
+                        <li><b>Neighborhoods underwent development in <u>early 2010's but stopped
+                            midway (currently stagnated or slowed down)</u> (2010 - 2015)</b></li>
+                        <li><b>Neighborhoods experienced <u>little to no development</u></b></li>
+                    </ol>
+                    
+                    <br>
+                    Note that the development growth in individual neighborhood is examined relative to the rest
+                    in the city -- this is for better directing attention and resources to those 'relatively under' developed neighborhood within the City. 
+                    Trends would be very differently if put on a national scale. Using indicators identified in tiers, neighborhoods are assessed by scoring in the two time frame (2010 - 2015 and 2016 - 2022) --
+                     if one falls in top 50% that is 1 point, bottom 50% means 0 point. If one scores 1 in both time frame, that suggests a constant growth, opposite means little to no growth. The 4 categories can be illustrated by the <b><i>diagram on the right.</i></b>
+
+                    <br>
+                    <br>
+                    For results of this development assessment, jump to <a href="3_Dev_Map.html">Development Map</a>. If you wish to learn more about selection of geographic area and data sources, 
+                    refer to <a href="1_Scope_Data.html">Scope & Data</a>. For more data exploration, visit <a href="2_Data_Glance.html">Data at a Glance</a>. 
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+<!-- add a gallery of 4 static map using the 4 tiers -->
+
+
+
+         </div>
+         <script src="script.js"></script>
+    </body>
+
+
+<!-- Leaflet JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+   
+
+</html>
